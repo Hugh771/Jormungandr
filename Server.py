@@ -17,9 +17,9 @@ while True:
 		''')
     client_chose=input('<<')
     
-    resul=GET_Whitelist.Get_whitelist()
+    Whitelist=GET_Whitelist.Get_whitelist()
 
-    if resul != 1:
+    if resul == None:
     	print('Whitelist Falid!!!')
     	sys.exit(0)
     	
